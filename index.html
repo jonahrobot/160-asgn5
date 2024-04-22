@@ -3,12 +3,14 @@
         <title>Five</title>
         <script  type="importmap">{
             "imports": {
-                "three": "https://threejs.org/build/three.module.js"
+                "three": "./three.module.js",
+                "loader": "./OBJLoader.js",
+                "MTLLoader": "./MTLLoader.js"
             }
         }</script>
     </head>
     <body>
-        <canvas id="c"></canvas>
+        <canvas id="c"  width="800" height="400"></canvas>
+        <script type="module" src="./main.js"></script>
     </body>
 </html>
-
