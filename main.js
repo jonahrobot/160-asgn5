@@ -155,6 +155,10 @@ function main() {
 	makeInstance(new THREE.BoxGeometry(1, 1, 10),0x000000, -5,0.5,0);
 	makeInstance(new THREE.BoxGeometry(10, 1, 1),0x000000, 0,0.5,-5);
 
+	makeInstance(new THREE.BoxGeometry(1, 1, 10),0x000000, 5,5.5,0);
+	makeInstance(new THREE.BoxGeometry(1, 1, 10),0x000000, -5,5.5,0);
+	makeInstance(new THREE.BoxGeometry(10, 1, 1),0x000000, 0,5.5,-5);
+
 	const controls = new ORBIT.OrbitControls( camera, canvas );
 	controls.target.set( 0, 5, 0 );
 	controls.update();
